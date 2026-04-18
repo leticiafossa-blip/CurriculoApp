@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+📄 Sistema de Gestão de Currículos — Etapa 1 (Frontend)
+📌 Sobre o Projeto
 
-## Getting Started
+Este projeto tem como objetivo o desenvolvimento de uma aplicação web para gestão de currículos, utilizando o ecossistema Next.js com foco em:
 
-First, run the development server:
+Experiência do usuário (UX)
+Arquitetura modular de componentes
+Validação robusta de formulários
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Nesta Etapa 1, o foco está exclusivamente no frontend, utilizando dados mockados e armazenamento local.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🚀 Tecnologias Utilizadas
+Framework: Next.js (App Router)
+Estilização: Tailwind CSS
+Componentes UI: shadcn/ui
+Formulários: React Hook Form + Yup
+Máscaras: React Input Mask Next
+Notificações: Sonner
+Ícones: React Icons
+Imagens: Next.js Image Component
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🧱 Arquitetura do Projeto
 
-## Learn More
+🔹 Componentes Globais
+Header: Identificação do sistema + navegação principal
+Nav: Menu integrado ao header
+Footer: Informações de rodapé e links secundários
 
-To learn more about Next.js, take a look at the following resources:
+🔹 Rotas e Páginas
+Rota	Descrição
+/	Landing page com apresentação do sistema
+/curriculos/visualizar	Lista de currículos
+/curriculos/visualizar/[id]	Detalhes do currículo
+/curriculos/cadastrar	Cadastro de novo currículo
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+🔐 Proteção de Rotas
+URLs amigáveis e organizadas
+Estrutura que evita exploração direta de rotas internas
+⚙️ Funcionalidades
+📦 Persistência Mockada
+Uso de constantes ou localStorage
+Imagens armazenadas em /public
+✅ Validação de Formulários
+Campos obrigatórios
+Validação de e-mail
+Tamanho mínimo de textos
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+🎭 Máscaras de Entrada
+CPF
+Telefone
+Datas
 
-## Deploy on Vercel
+🔔 Feedback Visual
+Notificações com Sonner (sucesso/erro)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+⏳ Estados da Interface
+Empty State
+Mensagem amigável quando não houver currículos
+Botão: “Criar meu primeiro currículo”
+Loading (Skeleton)
+Uso do Skeleton do shadcn/ui
+Simulação de carregamento em rotas dinâmicas
+
+🔍 Busca e Filtro
+Filtro em tempo real por:
+Nome
+Cargo
+Atualização dinâmica conforme digitação
+(Opcional) uso de debounce
+
+📦 Entrega
+Repositório no GitHub
+Histórico de commits
+README inicial (este documento)
+
+✨ Refinamentos de UI
+Botões:
+Estados: hover, focus, disabled
+Navegação:
+Indicação visual de rota ativa
+Feedback:
+Toasts com mensagens detalhadas de erro (Yup)
+
+📌 Status do Projeto
+
+🚧 Em desenvolvimento (Etapa 1 - Frontend)
