@@ -4,6 +4,8 @@ export const curriculoSchema = yup.object({
   nome: yup.string().required("Nome é obrigatório"),
   email: yup.string().email("Email inválido").required("Email é obrigatório"),
   telefone: yup.string().required("Telefone é obrigatório"),
+  // Adicionamos o CPF aqui para o TypeScript parar de reclamar na página de cadastro
+  cpf: yup.string().required("CPF é obrigatório"), 
   cargo: yup.string().required("Cargo é obrigatório"),
   resumo: yup
     .string()
@@ -16,4 +18,4 @@ export const curriculoSchema = yup.object({
       cargo: yup.string().required("Cargo obrigatório"),
     })
   ),
-});
+})[cite: 2];
